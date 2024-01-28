@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #container {
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      /* grid-template-columns: 100px 100px 100px 100px 100px 100px; */
+      grid-template-rows: auto;
+      gap: 20px;
+      font-size: 20px;
+      grid-template-areas:
+        "dpink2 grn2 mrn2 blu rd grn"
+          "mrn tl  rpd dpink blu2 ylw"
+          /* "rd ylw blu2 grn " */
+
+
+    }
+    #container > div:nth-child(1) {
+      background-color: blue;
+      grid-area: blu;
+    }
+    #container > div:nth-child(2) {
+      background-color: green;
+      grid-area: grn;
+    }
+    #container > div:nth-child(3) {
+      background-color: yellow;
+      grid-area: ylw;
+    }
+    #container > div:nth-child(4) {
+      background-color: red;
+      grid-area: rd;
+    }
+    #container > div:nth-child(5) {
+      background-color: rgb(83, 12, 74);
+      grid-area: mrn;
+    }
+    #container > div:nth-child(6) {
+      background-color: rgb(177, 52, 73);
+      grid-area: dpink;
+    }
+    #container > div:nth-child(7) {
+      background-color: rgb(0, 247, 255);
+      grid-area:tl;
+    }
+    #container > div:nth-child(8) {
+      background-color: rgb(255, 0, 242);
+      grid-area: rpd;
+    }
+    #container > div:nth-child(9) {
+      background-color: rgb(216, 86, 203);
+      grid-area: mrn2;
+    }
+    #container > div:nth-child(10) {
+      background-color: rgba(82, 82, 175, 0.712);
+      grid-area: blu2;
+    }
+    #container > div:nth-child(11) {
+      background-color: rgb(77, 202, 77);
+      grid-area: grn2;
+    }
+    #container > div:nth-child(12) {
+      background-color: rgb(216, 94, 114);
+      grid-area: dpink2;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+  </div>
+</body>
+</html>
