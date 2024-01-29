@@ -13,31 +13,33 @@
     </div>
     <script>
 
-let value=document.querySelectorAll(".heading")
-console.log(value)
+let value=document.querySelector(".heading")
+console.log(value,"17")
 let newText="And hello  javascript from sunil"
 let index=1
+value.innerText +=newText
+console.log(value)
 
-for(newValue of value){
-newValue.innerText=`newValue.innerText+newText ${index}`
-index++
-if(index===1){
+// for(newValue of value){
+// newValue.innerText=`newValue.innerText+newText ${index}`
+// index++
+// if(index===1){
 
-    newValue.style.color="red"
-}else if(index==2){
-    newValue.style.color="yellow"
-    newValue.style.backgroundColor="black"
-}else if(index==3){
-        newValue.style.color="green"
-        newValue.style.backgroundColor="cyan"
-}else{
-        newValue.style.color="teal"
-}
-}
+//     newValue.style.color="red"
+// }else if(index==2){
+//     newValue.style.color="yellow"
+//     newValue.style.backgroundColor="black"
+// }else if(index==3){
+//         newValue.style.color="green"
+//         newValue.style.backgroundColor="cyan"
+// }else{
+//         newValue.style.color="teal"
+// }
+// }
 // value[0].innerText= "And hello  javascript from sunil"
 // value[1].innerText="And hello  javascript from sunil"
 // value[2].innerText="And hello  javascript from sunil"
-console.log(value)
+// console.log(value)
 
     </script>
 </body>
