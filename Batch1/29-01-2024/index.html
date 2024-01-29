@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <h1 class="heading">Hello from javascript</h1>
-        <h4 class="heading">Hello from javascript</h4>
-        <h4 class="heading"></h4>>Hello from javascript</h4>
-    </div>
-    <script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="main_heading">This is First DOM class</h1>
+            <h6 class="heading">Hello from </h6>
+            <h6 class="heading">Hello from </h6>
+            <h6 class="heading">Hello from </h6>
+        </div>
+        <script>
+            let value = document.querySelectorAll(".heading");
+            console.log(value)
+            index=1
+            for(values of value){
+                values.innerText+=`javaScript ${index}`
+                index++
+          console.log(values)
+            }
 
-let value=document.querySelector(".heading")
-console.log(value,"17")
-let newText="And hello  javascript from sunil"
-let index=1
-value.innerText +=newText
-console.log(value)
+            // let data = value.forEach((newvalue, index) => {
+            //     if (index == 0) {
+            //         newvalue.innerText = "I am new JavaScript Syntax";
+            //         newvalue.style.color = "red";
+            //         newvalue.style.fontSize = "20px";
+            //     } else if (index == 1) {
+            //         newvalue.innerText = "I am new JavaScript Syntax";
+            //         newvalue.style.color = "green";
+            //         newvalue.style.fontSize = "25px";
+            //     } else if (index == 2) {
+            //         newvalue.innerText = "I am new JavaScript Syntax";
+            //         newvalue.style.color = "blue";
+            //         newvalue.style.fontSize = "30px";
+            //     } else {
+            //         newvalue.style.color = "yellow";
+            //     }
+            // });
+            // console.log(data);
+            // console.log(value);
+            // let newValue1=value[0]
+            // let newValue2=value[1]
+            // newValue1.style.color="red"
+            // newValue2.style.color="green"
+            // let changeText=newValue1.innerText="i am new JavaScript Syntex"
 
-// for(newValue of value){
-// newValue.innerText=`newValue.innerText+newText ${index}`
-// index++
-// if(index===1){
+            // console.log(changeText)
+            // console.log(newValue2.innerText)
+            // let index = 0;
+            //     for (values of value) {
+            //     if (index == 0) {
+            //             values.innerText = "I am new JavaScript Syntax";
+            //             values.style.color = "red";
+            //         }else if (index === 1) {
+            //             values.style.color = "green";
+            //             values.innerText = "I am new JavaScript Syntax";
 
-//     newValue.style.color="red"
-// }else if(index==2){
-//     newValue.style.color="yellow"
-//     newValue.style.backgroundColor="black"
-// }else if(index==3){
-//         newValue.style.color="green"
-//         newValue.style.backgroundColor="cyan"
-// }else{
-//         newValue.style.color="teal"
-// }
-// }
-// value[0].innerText= "And hello  javascript from sunil"
-// value[1].innerText="And hello  javascript from sunil"
-// value[2].innerText="And hello  javascript from sunil"
-// console.log(value)
+            //         }else if (index === 2) {
+            //             values.style.color = "blue";
+            //             values.innerText = "I am new JavaScript Syntax";
+            //     }else{
+            //             values.style.color = "cyan";
 
-    </script>
-</body>
+            //     }
+            //     index++
+            // }
+        </script>
+    </body>
 </html>
