@@ -8,32 +8,49 @@
     <body>
         <div>
             <h1 id="main_heading">This is First DOM class</h1>
-            <h6 class="heading">Hello from </h6>
-            <h6 class="heading">Hello from </h6>
-            <h6 class="heading">Hello from </h6>
-            <h6 class="heading">Hello from </h6>
-            <h6 class="heading">Hello from </h6>
-            <h6 class="heading">Hello from </h6>
-            <h6 class="heading">Hello from </h6>
-            <h6 class="heading">Hello from </h6>
-            <h6 class="heading">Hello from </h6>
+            <h6 class="heading">Hello from</h6>
+            <h6 class="heading">Hello from</h6>
+            <h6 class="heading">Hello from</h6>
+            <h6 class="heading">Hello from</h6>
+            <h6 class="heading">Hello from</h6>
+            <h6 class="heading">Hello from</h6>
+            <h6 class="heading">Hello from</h6>
+            <h6 class="heading">Hello from</h6>
+            <h6 class="heading">Hello from</h6>
         </div>
+        <form id="form">
+            <input type="text" id="name" placeholder="enter name" />
+            <br /><br />
+            <input type="mobile" id="mobile" placeholder="enter mobile" />
+            <br /><br />
+            <button>Submit</button>
+        </form>
         <script>
-            let value = document.querySelectorAll(".heading");
-            console.log(value)
-            index=1
-            for(values of value){
-                values.innerText=values.innerText+" "+`javaScript ${index}`
-                values.style.color="red"
-                    values.style.fontSize="15px"
+            let formValue = document.getElementById("form");
+            formValue.addEventListener("submit", function (e) {
+                e.preventDefault()
+                let nameValue = document.getElementById("name").value
+                let mobileValue = document.getElementById("mobile").value
+                console.log(nameValue, mobileValue);
+            });
 
-                index++
-                if(index%2==0){
-                    values.style.color="green"
-                    values.style.fontSize="20px"
-                }
-          console.log(values)
-            }
+
+            let value = document.querySelectorAll(".heading");
+
+            //     console.log(value)
+            //     index=1
+            //     for(values of value){
+            //         values.innerText=values.innerText+" "+`javaScript ${index}`
+            //         values.style.color="red"
+            //             values.style.fontSize="15px"
+
+            //         index++
+            //         if(index%2==0){
+            //             values.style.color="green"
+            //             values.style.fontSize="20px"
+            //         }
+            //   console.log(values)
+            //     }
 
             // let data = value.forEach((newvalue, index) => {
             //     if (index == 0) {
