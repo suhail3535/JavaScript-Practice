@@ -11,14 +11,27 @@
             <h6 class="heading">Hello from </h6>
             <h6 class="heading">Hello from </h6>
             <h6 class="heading">Hello from </h6>
+            <h6 class="heading">Hello from </h6>
+            <h6 class="heading">Hello from </h6>
+            <h6 class="heading">Hello from </h6>
+            <h6 class="heading">Hello from </h6>
+            <h6 class="heading">Hello from </h6>
+            <h6 class="heading">Hello from </h6>
         </div>
         <script>
             let value = document.querySelectorAll(".heading");
             console.log(value)
             index=1
             for(values of value){
-                values.innerText+=`javaScript ${index}`
+                values.innerText=values.innerText+" "+`javaScript ${index}`
+                values.style.color="red"
+                    values.style.fontSize="15px"
+
                 index++
+                if(index%2==0){
+                    values.style.color="green"
+                    values.style.fontSize="20px"
+                }
           console.log(values)
             }
 
