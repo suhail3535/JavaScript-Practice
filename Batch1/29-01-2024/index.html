@@ -8,17 +8,36 @@
 <body>
     <div>
         <h1 class="heading">Hello from javascript</h1>
-        <h4>Hello from javascript 1</h4>
-        <h4>Hello from javascript 2</h4>
+        <h4 class="heading">Hello from javascript</h4>
+        <h4 class="heading"></h4>>Hello from javascript</h4>
     </div>
     <script>
-// let value=document.getElementsByClassName("heading")
-// let newdata=value[0].innerText="this is first class"
-// let value=document.getElementsByTagName("h1")
-let value=document.getElementsByTagName("h1")
+
+let value=document.querySelectorAll(".heading")
 console.log(value)
-let newdata=value[0].innerText;
-console.log(newdata)
+let newText="And hello  javascript from sunil"
+let index=1
+
+for(newValue of value){
+newValue.innerText=`newValue.innerText+newText ${index}`
+index++
+if(index===1){
+
+    newValue.style.color="red"
+}else if(index==2){
+    newValue.style.color="yellow"
+    newValue.style.backgroundColor="black"
+}else if(index==3){
+        newValue.style.color="green"
+        newValue.style.backgroundColor="cyan"
+}else{
+        newValue.style.color="teal"
+}
+}
+// value[0].innerText= "And hello  javascript from sunil"
+// value[1].innerText="And hello  javascript from sunil"
+// value[2].innerText="And hello  javascript from sunil"
+console.log(value)
 
     </script>
 </body>
