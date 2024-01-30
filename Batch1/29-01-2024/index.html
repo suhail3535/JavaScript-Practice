@@ -7,35 +7,60 @@
     </head>
     <body>
         <div>
-            <h1 id="main_heading">This is First DOM class</h1>
-            <h6 class="heading">Hello from</h6>
-            <h6 class="heading">Hello from</h6>
-            <h6 class="heading">Hello from</h6>
-            <h6 class="heading">Hello from</h6>
-            <h6 class="heading">Hello from</h6>
-            <h6 class="heading">Hello from</h6>
-            <h6 class="heading">Hello from</h6>
-            <h6 class="heading">Hello from</h6>
-            <h6 class="heading">Hello from</h6>
+            <p id="main_heading">This is First DOM class</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
+            <p class="heading">Hello from</p>
         </div>
-        <form id="form">
+        <!-- <form id="form">
             <input type="text" id="name" placeholder="enter name" />
             <br /><br />
             <input type="mobile" id="mobile" placeholder="enter mobile" />
             <br /><br />
             <button>Submit</button>
-        </form>
+        </form> -->
         <script>
-            let formValue = document.getElementById("form");
-            formValue.addEventListener("submit", function (e) {
-                e.preventDefault()
-                let nameValue = document.getElementById("name").value
-                let mobileValue = document.getElementById("mobile").value
-                console.log(nameValue, mobileValue);
-            });
-
+            // let formValue = document.getElementById("form");
+            // formValue.addEventListener("submit", function (e) {
+            //     e.preventDefault()
+            //     let nameValue = document.getElementById("name").value
+            //     let mobileValue = document.getElementById("mobile").value
+            //     console.log(nameValue, mobileValue);
+            // });
 
             let value = document.querySelectorAll(".heading");
+            value.forEach((newvalue, index) => {
+                index++;
+                newvalue.innerText  += `i am john ${index}`;
+
+                // newvalue.innerText=newvalue.innerText+ `i am john ${index}`
+            });
 
             //     console.log(value)
             //     index=1
@@ -97,11 +122,6 @@
             //     }
             //     index++
             // }
-
-
-
-
-
         </script>
     </body>
 </html>
