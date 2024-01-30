@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #main_container {
+                width: 40%;
+                margin: auto;
+                text-align: center;
+                /* border: 1px solid green; */
+                border-radius: 50px;
+                background: linear-gradient(145deg, #e8f2f3, #c3cbcc);
+                box-shadow: 30px 30px 60px #9ca3a3, -30px -30px 60px #ffffff;
+            }
+            #main_container div {
+                width: 95%;
+                margin: auto;
+                padding: 20px 10px;
+                /* border: 1px solid gray; */
+            }
+            img {
+                width: 90%;
+                margin: auto;
+                border-radius: 10px;
+                /* aspect-ratio: 1/1; */
+            }
+
+            button *,
+            button :after,
+            button :before,
+            button:after,
+            button:before {
+                border: 0 solid;
+                box-sizing: border-box;
+            }
+
+            button {
+                -webkit-tap-highlight-color: transparent;
+                -webkit-appearance: button;
+                background-color: #000;
+                background-image: none;
+                color: #fff;
+                cursor: pointer;
+                font-family: ui-sans-serif, system-ui, -apple-system,
+                    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+                    Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+                    Segoe UI Symbol, Noto Color Emoji;
+                font-size: 100%;
+                font-weight: 900;
+                line-height: 1.5;
+                margin: 0;
+                -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+                padding: 0;
+                text-transform: uppercase;
+            }
+
+            button:disabled {
+                cursor: default;
+            }
+
+            button:-moz-focusring {
+                outline: auto;
+            }
+
+            button svg {
+                display: block;
+                vertical-align: middle;
+            }
+
+            button [hidden] {
+                display: none;
+            }
+
+            button {
+                border-radius: 99rem;
+                border-width: 2px;
+                overflow: hidden;
+                padding: 0.8rem 3rem;
+                position: relative;
+            }
+            ul {
+                text-align: left;
+            }
+            button span {
+                mix-blend-mode: difference;
+            }
+
+            button:after,
+            button:before {
+                background: linear-gradient(
+                    90deg,
+                    #fff 25%,
+                    transparent 0,
+                    transparent 50%,
+                    #fff 0,
+                    #fff 75%,
+                    transparent 0
+                );
+                content: "";
+                inset: 0;
+                position: absolute;
+                transform: translateY(var(--progress, 100%));
+                transition: transform 0.2s ease;
+            }
+
+            button:after {
+                --progress: -100%;
+                background: linear-gradient(
+                    90deg,
+                    transparent 0,
+                    transparent 25%,
+                    black 0,
+                    black 50%,
+                    transparent 0,
+                    transparent 75%,
+                    black 0
+                );
+                z-index: -1;
+            }
+
+            button:hover:after,
+            button:hover:before {
+                --progress: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main_container"></div>
+
+        <script>
+            let child_div = document.createElement("div");
+            // child_div.innerText="hello world"
+            let image = document.createElement("img");
+            let image1 = document.createElement("img");
+            image.setAttribute("src", "./1.jpg");
+            image1.src = "./images.jpg";
+            image1.alt = "user image";
+            let heading = document.createElement("h1");
+            heading.innerText = "Nike Running Shoes";
+
+            let ptag = document.createElement("p");
+            ptag.innerText =
+                "impedit labore ex sed maiores. Dicta architecto nemo corrupti veritatis porro deserunt totam, deleniti tempore veniam iure!";
+
+            let button = document.createElement("button");
+            button.innerText = "Buy Now";
+            let unorderList = document.createElement("ul");
+            let list1 = document.createElement("li");
+            list1.innerText = "item1";
+            let list2 = document.createElement("li");
+            list2.innerText = "item2";
+            let list3 = document.createElement("li");
+            list3.innerText = "item3";
+            unorderList.append(list1, list2, list3);
+            console.log(unorderList);
+
+            child_div.append(heading, image, ptag, image1, button, unorderList);
+
+            let main_container = document.getElementById("main_container");
+            main_container.append(child_div);
+        </script>
+    </body>
+</html>
