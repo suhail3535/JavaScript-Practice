@@ -6,30 +6,47 @@
         <title>Document</title>
         <style>
             .container {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                /* display: grid; */
+                /* grid-template-columns: repeat(4, 1fr); */
                 /* grid-template-columns: repeat(auto-fill,); */
                 /* grid-template-rows:50px 50px; */
                 /* height: 500px; */
-                /* grid-auto-rows: minmax(100px,auto);
-    grid-auto-columns: minmax(100px,auto);
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); */
+                /* grid-template-columns: 200px 200px; */
+                grid-auto-rows: minmax(100px,auto);
+                /* grid-auto-columns: minmax(100px,auto); */
+                grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
 
                 gap: 20px;
-            }
-            .item {
+
+
+  display: grid;
+
+  /* grid-template-columns: minmax(100px, 200px); Implicitly created columns */
+}
+.item{
+background-color:yellowgreen;
+/* text-align: center; */
+    display: grid;
+    place-items: center;
+     /* Center content both horizontally and vertically */
+    text-align: center;
+
+
+}
+
+            /* .item {
                 background-color: rgb(93, 235, 136);
-                /* border: 2px solid red; */
-                height: 100px;
+
                 display: flex;
                 font-weight: bold;
                 border-radius: 20px 5px;
                 color: white;
+                padding: 20px;
                 justify-content: center;
                 align-items: center;
                 box-shadow: -25px 25px 50px #b7babb, 25px -25px 50px #ffffff;
-            }
-            @media screen and (min-width: 421px) and (max-width: 768px) {
+            } */
+            /* @media screen and (min-width: 421px) and (max-width: 768px) {
                 .container {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
@@ -40,22 +57,36 @@
                     display: grid;
                     grid-template-columns: repeat(1, 1fr);
                 }
-            }
+            } */
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="item">box 1</div>
-            <div class="item">box 2</div>
-            <div class="item">box 3</div>
-            <div class="item">box 4</div>
-            <div class="item">box 5</div>
-            <div class="item">box 6</div>
-            <div class="item">box 7</div>
-            <div class="item">box 8</div>
+            <div class="item">Lorem</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non autem in consectetur explicabo delectus voluptas excepturi maxime libero at tenetur!</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, excepturi quae ipsa modi fugiat a error beatae amet doloremque, rerum harum magnam qui earum veniam, similique commodi perspiciatis quam eveniet?</div>
+            <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dolor corporis maxime nam eos? Nobis pariatur possimus laudantium asperiores! Ab ad dolore fugiat rerum laborum repellat. Suscipit in ea libero mollitia, ad eos delectus voluptatum fugiat cumque tempore nihil .</div>
+            <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, autem?</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil amet sed eos, et accusantium cumque repellendus voluptates quis alias voluptatem, sunt ex praesentium quam exercitationem aspernatur corporis. Alias commodi vel minima optio fugiat dolorum, odit obcaecati voluptate ipsum. Tempora cum nam repellendus beatae nemo obcaecati quo in aperiam reiciendis!
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam cum rerum esse commodi architecto ducimus consectetur incidunt assumenda perferendis eius?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit obcaecati nulla molestias, et ab omnis labore minus illum eligendi quos.
+            </div>
+
+                <!-- <div class="item">
+                <img style="width: 100%;" src="../../Batch1/29-01-2024/image1.jpg" alt="">
+                <h1>price:-1500 rupees</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, consequatur.</p>
+            </div> -->
+            <!-- <div class="item"><img style="width: 100%;" src="../../Batch1/29-01-2024/image1.jpg" alt="">
+                <h1>price:-1500 rupees</h1>
+                <p>hello</p>
+
+            </div> -->
             <div class="item">box 9</div>
             <div class="item">box 10</div>
             <div class="item">box 11</div>
+            <div class="item">box 12</div>
+            <div class="item">box 12</div>
             <div class="item">box 12</div>
         </div>
     </body>
