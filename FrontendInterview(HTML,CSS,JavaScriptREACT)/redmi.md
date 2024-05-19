@@ -80,6 +80,7 @@ Example:
 <------------------------------------------->
 
 Q-10 What are data- attributes in HTML5?*
+
 Answer: data-* attributes are used to store custom data private to the page or application. They are intended for use with JavaScript.
 Example:
 <div data-id="12345">Some content</div>
@@ -122,7 +123,7 @@ Example:
 
 Q-14 What is the use of the <iframe> tag?
 
-Answer: The <iframe> tag is used to embed another HTML document within the current document.
+Answer: The <iframe> tag is used to embed(insert) another HTML document within the current document.
 Example:
 <iframe src="https://www.example.com" width="600" height="400"></iframe>
 
@@ -200,3 +201,158 @@ Example:
   <input type="text" id="name" name="name"><br><br>
   <input type="submit" value="Submit">
 </form>
+
+Q-21 What is the <fieldset> and <legend> tags used for?
+
+Answer: The <fieldset> tag is used to group related elements within a form, and the <legend> tag provides a caption for the <fieldset>.
+Example:
+<fieldset>
+  <legend>Personal Information</legend>
+  <label for="fname">First Name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last Name:</label>
+  <input type="text" id="lname" name="lname">
+</fieldset>
+
+<------------------------------------------->
+<--------------------------CSS Important Question ---------------->
+Q-1. What is CSS?
+CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document written in HTML or XML.
+<------------------------------------------->
+
+Q-2. What are the advantages of CSS?
+Separation of content from presentation.
+Consistency across multiple pages.
+Easy maintenance and updating.
+Bandwidth efficiency by reducing file size.
+Better control over layout and styling.
+<------------------------------------------->
+
+Q-3. Explain the box model in CSS?
+The CSS box model describes the rectangular boxes that are generated for the elements in the document tree. It consists of content, padding, border, and margin.
+<------------------------------------------->
+
+Q-4. What are the different CSS selectors?
+Type selectors,
+class selectors,
+ID selectors,
+descendant selectors,
+adjacent sibling selectors,
+attribute selectors,
+pseudo-classes,
+pseudo-elements.
+<------------------------------------------->
+
+Q-5. What is the difference between display: none; and visibility: hidden;?
+a-display: none; removes the element from the document flow, and it does not take up any space.
+b-visibility: hidden; hides the element, but it still occupies the space it would take up if it were visible.
+<------------------------------------------->
+
+Q-6. What is a pseudo-class in CSS?
+A pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).
+For example, :hover, :active, :focus.
+
+<------------------------------------------->
+
+Q-7. What is the difference between em and rem units in CSS?
+em units are relative to the font size of the element itself.
+rem units are relative to the font size of the root element (<html>).
+
+<------------------------------------------->
+
+Q-8. What is the purpose of the box-shadow property in CSS?
+The box-shadow property is used to add shadow effects around
+an element’s frame.
+
+<------------------------------------------->
+
+Q-9. What is the CSS :nth-child() pseudo-class used for?
+It selects elements based on their position among a group of siblings.
+
+<------------------------------------------->
+
+10. What is the difference between padding and margin in CSS?
+padding is the space inside  between the content of an element and its border.
+margin is the space outside the border of an element.
+<------------------------------------------->
+
+11. Explain the CSS @media rule.
+The @media rule is used to apply different styles for different media types/devices. It allows you to specify a set of CSS rules to be applied only if a certain condition is true, such as screen size.
+<------------------------------------------->
+
+12. What is the CSS transition property used for?
+The transition property is used to create smooth transitions between two states of an element.
+<------------------------------------------->
+
+13. What is the purpose of the CSS flexbox layout model?
+The flexbox layout model is used to create flexible layouts where items within a container can be dynamically arranged in any direction and order.
+<------------------------------------------->
+
+15. What is the purpose of the CSS position property?
+The position property specifies the positioning method of an element (static, relative, absolute, fixed, or sticky).
+
+<------------------------------------------->
+
+16. What is the CSS opacity property used for?
+The opacity property is used to set the transparency level of an element and its child elements.
+<------------------------------------------->
+
+17. How can you make an image responsive in CSS?
+By setting the max-width property of the image to 100% and ensuring that its parent container’s width is flexible (e.g., using percentage or viewport units).
+<------------------------------------------->
+
+18. What is the difference between absolute and relative positioning in CSS?
+absolute positioning positions an element relative to its nearest positioned ancestor. If there is no positioned ancestor, it is placed relative to the initial containing block.
+relative positioning positions an element relative to its normal position in the document flow.
+<------------------------------------------->
+
+19. What is the purpose of the CSS transform property?
+The transform property allows you to apply transformations (e.g., translate, rotate, scale) to elements in 2D or 3D space.
+<------------------------------------------->
+
+20. What is the purpose of the clip-path property in CSS?
+The clip-path property is used to clip elements to a specific shape, defined by a path.
+<------------------------------------------->
+
+21. What is the purpose of the box-sizing property in CSS?
+The box-sizing property is used to specify how the total width and height of an element are calculated, including its padding and border.
+<------------------------------------------->
+
+22. Explain the CSS grid layout model?
+The grid layout model is a two-dimensional layout system that allows you to create complex grid-based layouts with rows and columns.
+<------------------------------------------->
+
+23. How do you define a grid container in CSS?
+You define a grid container by setting the display property of an element to grid or inline-grid.
+<------------------------------------------->
+
+24. What is the purpose of the auto-fill and auto-fit keywords in CSS Grid?
+auto-fill creates as many tracks as possible without overflowing the container, while auto-fit creates tracks to fill the available space, potentially collapsing empty tracks.
+<------------------------------------------->
+
+25. What is the purpose of the grid-template-areas property?
+The grid-template-areas property allows you to define named grid areas in the grid layout, making it easier to visually understand and manage the layout.
+<------------------------------------------->
+
+26. What is Flexbox?
+Flexbox is a one-dimensional layout model in CSS designed to provide a more efficient way to layout, align, and distribute space among items in a container, even when their size is unknown or dynamic.
+<------------------------------------------->
+
+27. How do you create a responsive layout using Flexbox?
+By combining Flexbox properties with media queries, you can create layouts that adapt to different screen sizes and devices.
+<------------------------------------------->
+
+28. How do you align flex items within a flex container?
+You can align flex items using properties like justify-content (for horizontal alignment) and align-items (for vertical alignment) on the flex container.
+<------------------------------------------->
+
+29. What are the main properties used to create a flex container in CSS?
+The main properties are flex-direction, justify-content, align-items, and flex-wrap.
+<------------------------------------------->
+
+30. What is the purpose of the align-self property in Flexbox?
+The align-self property allows you to override the align-items property for individual flex items, aligning them along the cross axis of the flex container.
+
+
+
+
