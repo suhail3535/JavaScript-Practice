@@ -36,5 +36,13 @@
 
         </div>
     </div>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
 </body>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        context.fillStyle = 'blue';
+        context.fillRect(10, 10, 150, 75);
+    </script>
 </html>

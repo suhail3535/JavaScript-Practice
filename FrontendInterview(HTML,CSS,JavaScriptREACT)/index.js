@@ -22,20 +22,31 @@
 // }
 // console.log(hof(4,multi))
 // console.log(hof(4,sum))
-function userData () {
-    return new Promise((resolve, rejected) => {
+// function userData () {
+//     return new Promise((resolve, rejected) => {
 
-        setTimeout(() => {
-            let number = Math.floor((Math.random() * 10))
-        // console.log(number);
-{number<1?resolve(number):rejected(new Error("higer number"))}
-        }, 1000)
+//         setTimeout(() => {
+//             let number = Math.floor((Math.random() * 10))
+//         // console.log(number);
+// {number<1?resolve(number):rejected(new Error("higer number"))}
+//         }, 1000)
 
-    })
+//     })
+// }
+// userData().then((result) => {
+//     console.log(result);
+// })
+//     .catch((error) => {
+//     console.log(error);
+// })
+
+
+function outer () {
+    let x = 10;
+    function inner () {
+    console.log(x)
+    }
+return inner
 }
-userData().then((result) => {
-    console.log(result);
-})
-    .catch((error) => {
-    console.log(error);
-})
+let value = outer()
+value()

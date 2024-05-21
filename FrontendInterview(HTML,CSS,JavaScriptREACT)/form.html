@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 40%;
+            margin: 30px auto;
+            border: 1px solid gray;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        Name:-<input id="name" type="text" placeholder="Enter Name"><br><br>
+        Mobile:-<input id="mobile" type="text" placeholder="Enter Name"><br><br>
+
+        <button id="btn">Submit</button>
+    </form>
+    <div id="cont"></div>
+</body>
+<script>
+    let arr = JSON.parse(localStorage.getItem("formdetails")) || [];
+
+    let form = document.getElementById("form");
+    let btn = document.getElementById("btn");
+
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        let obj = {
+            name: document.getElementById("name").value,
+            mobile: document.getElementById("mobile").value,
+        };
+        arr.push(obj);
+        localStorage.setItem("formdetails", JSON.stringify(arr));
+        displayData();
+        form.reset();
+    });
+
+    let cont = document.getElementById("cont");
+
+    function displayData () {
+        cont.innerHTML = ""; // Clear previous content
+        arr.forEach((ele) => {
+            let div = document.createElement("div");
+            let h1 = document.createElement("h1");
+            h1.innerText = ele.name;
+            let h2 = document.createElement("h3");
+            h2.innerText = ele.mobile;
+            div.append(h1,h2);
+            // div.appendChild(h2);
+            cont.append(div);
+        });
+    }
+
+displayData()
+</script>
+
+</html>

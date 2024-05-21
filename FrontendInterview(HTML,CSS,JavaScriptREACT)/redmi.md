@@ -428,3 +428,49 @@ The align-self property allows you to override the align-items property for indi
 
 
 
+<-------------------REACT------------->
+
+➡ What is React?
+ - A JavaScript library for building user interfaces.
+
+➡ What is JSX?
+ - A syntax extension for JavaScript that allows HTML-like code to be written in JavaScript files.
+
+➡ What is the Virtual DOM?
+ - A lightweight in-memory representation of the real DOM, used for efficient rendering.
+
+➡ How do you handle state changes in React?
+ - Using the setState() method or Hooks like useState().
+
+➡ What is a Higher-Order Component (HOC)?
+ - A function that takes a component as an argument and returns a new component with additional props or functionality.
+
+➡ What is React Hooks?
+ - A way to use state and other React features without writing a class component.
+
+➡ What is the difference between a controlled and uncontrolled component?
+ - Controlled components have their state managed by React, while uncontrolled components manage their own state.
+
+➡ How do you optimize the performance of a React application?
+ - Using techniques like memoization, shouldComponentUpdate(), and React.memo().
+
+➡ What is React Context?
+ - A way to share data between components without passing props down manually.
+
+➡ How do you handle errors in React?
+ - Using try-catch blocks, error boundaries, and the componentDidCatch() method.
+
+➡ What is a ref in React?
+ - A reference to a DOM node or a component instance.
+
+➡ How do you use React Portals?
+ - To render children into a different DOM container than the parent component.
+
+➡ What is the difference between a class component and a functional component?
+ - Class components use the class syntax and have a lifecycle, while functional components use a function and do not have a lifecycle.
+
+➡ How do you handle side effects in React?
+ - Using the useEffect() hook or the componentDidMount() method.
+
+➡ What is React Router?
+ - A popular library for client-side routing in React applications.
