@@ -13,6 +13,10 @@
             text-align: center;
             padding: 20px;
         }
+        #cont{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
     </style>
 </head>
 
@@ -26,40 +30,46 @@
     <div id="cont"></div>
 </body>
 <script>
-    let arr = JSON.parse(localStorage.getItem("formdetails")) || [];
-
+    let arr = JSON.parse(localStorage.getItem("userdata")) || [];
+    // console.log(arr,"30");
     let form = document.getElementById("form");
     let btn = document.getElementById("btn");
 
+
+    let cont = document.getElementById("cont")
     btn.addEventListener("click", (e) => {
         e.preventDefault();
         let obj = {
             name: document.getElementById("name").value,
             mobile: document.getElementById("mobile").value,
         };
-        arr.push(obj);
-        localStorage.setItem("formdetails", JSON.stringify(arr));
-        displayData();
+        arr.push(obj);///
+        localStorage.setItem("userdata", JSON.stringify(arr))
+
         form.reset();
+    displayData(arr)
+
     });
+//////element create and display data
+    function displayData (data) {
+        cont.innerHTML=""
+        data.forEach((ele) => {
+            // console.log(ele,"ele");
+            let div = document.createElement("div")
+            let h1 = document.createElement("h1")
+            h1.innerText = ele.name
+            let h4 = document.createElement("h4")
+            h4.innerText = ele.mobile
+            div.append(h1, h4)
+            cont.append(div)
+        })
 
-    let cont = document.getElementById("cont");
-
-    function displayData () {
-        cont.innerHTML = ""; // Clear previous content
-        arr.forEach((ele) => {
-            let div = document.createElement("div");
-            let h1 = document.createElement("h1");
-            h1.innerText = ele.name;
-            let h2 = document.createElement("h3");
-            h2.innerText = ele.mobile;
-            div.append(h1,h2);
-            // div.appendChild(h2);
-            cont.append(div);
-        });
     }
 
-displayData()
+    displayData(arr)
+
+
+
 </script>
 
 </html>

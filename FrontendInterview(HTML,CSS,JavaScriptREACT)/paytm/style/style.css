@@ -1,0 +1,101 @@
+#main_container {
+    width: 100%;
+    /* border: 1px solid gray; */
+    display: flex;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#section1 {
+    /* border: 1px solid gray; */
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_div {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+.logo_div img {
+    width: 30%;
+}
+
+#section1 div {
+    /* margin: 20px; */
+}
+
+#pay {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#details {
+    margin-top: 50px;
+}
+
+#btn_div {
+    width: 60%;
+    margin-top: 100px;
+    /* border: 2px solid green; */
+
+}
+
+#btn_div button {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btn_div button:hover {
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid black;
+}
+
+#section2 {
+    display: grid;
+    gap: 30px;
+    height: 500px;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#section2 div {
+
+    display: grid;
+    place-items: center;
+}
+
+#section2 div img {
+    /* border: 1px solid gray; */
+    border-radius: 50%;
+    width: 70%;
+    /* margin: auto; */
+}
+
+#part2 {
+
+    display: flex;
+    flex-direction: column;
+/* border: 2px solid green; */
+padding:10px 0px 20px 0px
+}
+
+
+#para{
+    color: red;
+}

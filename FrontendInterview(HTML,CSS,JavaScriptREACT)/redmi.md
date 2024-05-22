@@ -50,7 +50,7 @@ Example:-<img src="image.jpg" alt="Sample Image">
 
 Q6-What is the purpose of the <DOCTYPE> declaration?
 
-Answer: The <!DOCTYPE> declaration informs the browser about the version of HTML the page is written in, ensuring proper rendering.
+Answer: The <!DOCTYPE> declaration informs the browser about the version of HTML the page is written in,for ensuring proper rendering.
 <!DOCTYPE html>
 <------------------------------------------->
 
@@ -217,7 +217,7 @@ Example:
 <------------------------------------------->
 <--------------------------CSS Important Question ---------------->
 Q-1. What is CSS?
-CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document written in HTML or XML.
+CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document  which is written in HTML or XML.
 <------------------------------------------->
 
 Q-2. What are the advantages of CSS?
