@@ -1,0 +1,24 @@
+
+<------------------Important points for Github------------------>
+
+1-If you've used git add . and later decide not to commit the changes
+using git commit -m "msg", simply run git stash to revert this action.
+
+2-if you've made changes, staged them with git add .
+and committed using git commit -m "msg",but then realize you don't
+want to proceed with these changes or push them to GitHub,
+you have several options You can undo the commit while
+a)-keeping changes staged with git reset --soft HEAD~1.
+
+b)-Unstage changes with git reset HEAD~1.
+
+c)-discard all changes entirely with git reset --hard HEAD~1.
+
+<------------Most Important------------->
+if you've already pushed the code to GitHub and need to rectify the mistake both locally and on the remote repository:
+
+First, undo the last commit and discard all changes using:-
+git reset --hard HEAD~1.
+
+Then force push the changes to the remote repository with:-
+ git push origin main --force.

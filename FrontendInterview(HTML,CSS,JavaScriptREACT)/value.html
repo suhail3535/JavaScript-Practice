@@ -5,12 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        ul li{
+            font-size: 25px;
+        }
+.main{
+    text-align: center;
+}
+.two ul{
+    text-align: justify;
+}
+ol{
+    margin-top: 20px;
+}
+h3{
+    font-size: 25px;
+    color: red;
+}
+    </style>
 </head>
 
 <body>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis delectus facilis nihil aliquam adipisci. Eius
-    voluptas repellendus
-    illo molestias similique optio officiis iusto, hic itaque, saepe labore corporis omnis at?
+    <div class="main">
+<h1>Important for Github</h1>
+    </div>
+    <div class="two">
+        <ul>
+            <li>1-If you've used git add . and later decide not to commit the changes
+                using git commit -m "msg", simply run git stash to revert this action.</li>
+            <li>2-if you've made changes, staged them with git add .
+                and committed using git commit -m "msg",but then realize you don't
+                want to proceed with these changes or push them to GitHub,
+                you have several options You can undo the commit while</li>
+            <ol>
+                <li>
+                    keeping changes staged with <b> git reset --soft HEAD~1.</b>
+                </li>
+                <li>
+                    Unstage changes with <b> git reset HEAD~1.</b>
+                </li>
+                <li>
+                    discard all changes entirely with <b>
+git reset --hard HEAD~1.
+                    </b>
+
+                </li>
+
+            </ol>
+            <h1>Most Important</h1>
+            <h3>if you've already pushed the code to GitHub and need to rectify the mistake both locally and on the
+                remote
+                repository</h3>
+            <li>First, undo the last commit and discard all changes using:-
+            <b>git reset --hard HEAD~1.</b>    </li>
+            <li>Then force push the changes to the remote repository with:-
+            <b>git push origin main --force.</b>    </li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
 </body>
 
 </html>
