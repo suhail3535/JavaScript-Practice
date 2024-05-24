@@ -13,9 +13,10 @@
             text-align: center;
             padding: 20px;
         }
-        #cont{
+
+        #cont {
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
     </style>
 </head>
@@ -39,20 +40,27 @@
     let cont = document.getElementById("cont")
     btn.addEventListener("click", (e) => {
         e.preventDefault();
+
         let obj = {
             name: document.getElementById("name").value,
             mobile: document.getElementById("mobile").value,
         };
-        arr.push(obj);///
-        localStorage.setItem("userdata", JSON.stringify(arr))
+        if (obj.name == "" || obj.mobile == "") {
+            alert("please fill the value")
+            return
+        } else {
+            arr.push(obj);///
+            localStorage.setItem("userdata", JSON.stringify(arr))
 
-        form.reset();
-    displayData(arr)
+            form.reset();
+            displayData(arr)
+        }
+
 
     });
-//////element create and display data
+    //////element create and display data
     function displayData (data) {
-        cont.innerHTML=""
+        cont.innerHTML = ""
         data.forEach((ele) => {
             // console.log(ele,"ele");
             let div = document.createElement("div")

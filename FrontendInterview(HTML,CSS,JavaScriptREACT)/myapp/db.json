@@ -1,49 +1,19 @@
 {
   "data": [
     {
-      "name": "sohan kuamr cho",
-      "mobile": "9595969567999",
-      "id": "758c"
-    },
-    {
-      "name": "sohan kumar",
-      "mobile": 9595969567,
-      "id": "1f88"
-    },
-    {
-      "name": "sohan",
-      "mobile": 9595969567,
-      "id": "abea"
-    },
-    {
-      "id": "b0f2",
+      "id": "6403",
       "name": "Madan Lal",
+      "mobile": "086302457"
+    },
+    {
+      "id": "2330",
+      "name": "Suhail khan",
+      "mobile": "9598125005"
+    },
+    {
+      "id": "7cd9",
+      "name": "mani",
       "mobile": "08630245788"
-    },
-    {
-      "id": "ba0f",
-      "name": "Madan Lal",
-      "mobile": "08630245788"
-    },
-    {
-      "id": "ba0f",
-      "name": "Madan Lal",
-      "mobile": "0863024578"
-    },
-    {
-      "id": "f904",
-      "name": "mru",
-      "mobile": "98698686"
-    },
-    {
-      "id": "4572",
-      "name": "madhur",
-      "mobile": "78947696"
-    },
-    {
-      "id": "b60b",
-      "name": "aman",
-      "mobile": "77846584700777"
     }
   ]
 }

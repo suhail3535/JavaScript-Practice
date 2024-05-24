@@ -36,6 +36,22 @@ const Contact = () => {
         }
     };
 
+    const handleDelete = async (id) => {
+        try {
+            const response = await axios.delete(
+                `http://localhost:8080/data/${id}`,
+                data
+            );
+            console.log(response.data);
+            alert("deleted")
+            getData();
+
+
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
     // <----------For getting value inside input box when click on edit button-----
     const handleUpdate = (id) => {
         const selectedItem = details.find(
@@ -101,6 +117,9 @@ const Contact = () => {
                     <button onClick={() =>
                         handleUpdate(ele.id)
                     }>Edit</button>
+                    <button onClick={() =>
+                        handleDelete(ele.id)
+                    }>Delete</button>
                 </div>
             })}
         </div>
