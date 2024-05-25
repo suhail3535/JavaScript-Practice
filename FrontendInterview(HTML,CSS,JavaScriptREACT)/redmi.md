@@ -504,16 +504,16 @@ It selects elements based on their position among a group of siblings.
   <==========HR important ========>
   Why do you want to join us?
 
-"I am particularly excited about the opportunity to join Napses Technologies Pvt Ltd due to its impressive track record in building innovative and impactful products across various industries such as SaaS, consumer tech, marketplaces, logistics, AI/ML, and growth hacking. I admire how the company offers a comprehensive range of services, from mobile app and web product development to cloud and DevOps, UI/UX services, and team-building services. Working with clients like NeetPrep and others demonstrates the company's capability in solving complex problems with effective, high-quality solutions.
+"I am  excited about the opportunity to join Napses Technologies Pvt Ltd due to its impressive track record in building innovative and impactful products across various industries such as SaaS, consumer tech, marketplaces, logistics, AI/ML, and growth hacking. I admire how the company offers a comprehensive range of services, from mobile app and web product development to cloud and DevOps, UI/UX services, and team-building services. Working with clients like NeetPrep and others show case the company's capability in solving complex problems with high-quality solutions.
 
-Additionally, I have also learned more about MVPRockets, which, as per my information, is a venture of Napses Tech. I am particularly impressed by the diverse and successful projects completed for companies like Alaan, Livspace, ANSR, Jiraaf, Nirog street, Hafla, and Stream Alive.
+Additionally, I have also read  about MVPRockets, as per my information,  it is a venture of Napses Tech. I am particularly impressed by the diverse and successful projects completed for companies like Alaan, Livspace, ANSR, Jiraaf, Nirog street, Hafla, and Stream Alive.
 
 Second thing is ,The experienced leadership team and dedicated high-quality product teams at both Napses Technologies and MVPRockets indicate a culture of excellence and innovation. I believe that joining your company would provide me with the perfect environment to grow as a frontend developer. I am eager to bring my skills and experiences to your team and be a part of the exciting journey ahead.
 list
 Mr. Giridharan N sir(CEO)
 Mr.Satish bhatt sir(CTO),
 Mr. praveen mv sir(COO)
-Mr. vinaya rao sir(CDO)
+Mr. vinayak rao sir(CDO)
 Mrs Ashitha shetty ma'am(CPO)
 
 
