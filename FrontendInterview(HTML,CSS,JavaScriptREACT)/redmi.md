@@ -504,13 +504,13 @@ It selects elements based on their position among a group of siblings.
   <==========HR important ========>
   Why do you want to join us?
 
-"I am  excited about the opportunity to join Napses Technologies Pvt Ltd due to its impressive track record in building impactful products across various industries such as SaaS, consumer tech, marketplaces, logistics, AI/ML, and growth hacking. I admire how the company offers a comprehensive range of services, from mobile app and web product development to cloud and DevOps, UI/UX services, and team-building services. Working with clients like NeetPrep and others show case the company's capability in solving complex problems with high-quality solutions.
+"I am  excited about the opportunity to join Napses Technologies Pvt Ltd due to its impressive track record in building innovative and  impactful products across various industries such as SaaS, consumer tech, marketplaces, logistics, AI/ML, and growth hacking. I admire how the company offers a comprehensive range of services, from mobile app and web product development to cloud and DevOps, UI/UX services, and team-building services. Working with clients like NeetPrep and others show case the company's capability in solving complex problems with high-quality solutions.
 
-Additionally, I have also read  about MVPRockets.com, as per my information,  it is a venture of Napses Tech. I am particularly impressed by the diverse and successful projects completed for companies like Alaan, Livspace, ANSR, Jiraaf, Nirog street, Hafla, and Stream Alive.
+Additionally, I have also read  about MVPRockets.com, as per my information,  it is a venture of Napses Tech. I am particularly impressed by clint project which is successful completed for companies like Alaanpay, Livspace, ANSR, Jiraaf, Nirog street, Hafla, and Stream Alive.
 
 Second thing is ,The experienced leadership team and dedicated high-quality product teams at both Napses Technologies and MVPRockets indicate a culture of excellence and innovation. I believe that joining your company would provide me with the perfect environment to grow as a frontend developer. I am eager to bring my skills and experiences to your team and be a part of the exciting journey ahead.
 list
-Mr. Giridharan N sir(CEO)
+Mr. Giridharan Natarajan sir(CEO)
 Mr.Satish bhatt sir(CTO),
 Mr. praveen mv sir(COO)
 Mr. vinayak rao sir(CDO)
@@ -518,7 +518,7 @@ Mrs Ashitha shetty ma'am(CPO)
 
 
 <===========Why should be hire you=========>
-You should hire me because I bring a unique combination of skills, experiences, and qualities that align perfectly with the needs and values of your company.
+You should hire me because 
 
 Technical Proficiency: I have a strong foundation in frontend development, proficient in HTML, CSS, and JavaScript, along with expertise in modern frameworks like React.
 

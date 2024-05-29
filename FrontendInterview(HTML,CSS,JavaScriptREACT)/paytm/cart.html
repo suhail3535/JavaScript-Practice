@@ -26,12 +26,15 @@
         Name:-<input id="name" type="text" placeholder="Enter Name"><br><br>
         Mobile:-<input id="mobile" type="text" placeholder="Enter Name"><br><br>
 
-        <button id="btn">Submit</button>
+
     </form>
+    <h1 id="qty">0</h1>
     <div id="cont"></div>
 </body>
 <script>
-    let arr = JSON.parse(localStorage.getItem("userdata")) || [];
+    let arr = JSON.parse(localStorage.getItem("favdata")) || [];
+    let qty=document.getElementById("qty")
+    qty.innerText=arr.length
     // console.log(arr,"30");
     let form = document.getElementById("form");
     let btn = document.getElementById("btn");
@@ -68,12 +71,12 @@
             h1.innerText = ele.name
             let h4 = document.createElement("h4")
             h4.innerText = ele.mobile
-            let btn=document.createElement("button")
-            btn.innerText="Add"
-            btn.addEventListener("click", ()=>{
-                addToCart("favdata",ele)
+            let btn = document.createElement("button")
+            btn.innerText = "Add"
+            btn.addEventListener("click", () => {
+                addToCart("favdata", ele)
             })
-            div.append(h1, h4,btn)
+            div.append(h1, h4, btn)
             cont.append(div)
         })
 
@@ -82,13 +85,13 @@
     displayData(arr)
 
     // <--------------add to cart------------->
-        function addToCart(key,value){
-            let  cart=JSON.parse(localStorage.getItem("favdata"))||[]
-            cart.push(value)
-            localStorage.setItem(key,JSON.stringify(cart))
-            alert("added to cart")
+    function addToCart (key, value) {
+        let cart = JSON.parse(localStorage.getItem("favdata")) || []
+        cart.push(value)
+        localStorage.setItem(key, JSON.stringify(cart))
+        alert("added to cart")
 
-        }
+    }
 
 
 </script>
