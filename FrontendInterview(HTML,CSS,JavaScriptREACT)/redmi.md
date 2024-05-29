@@ -309,9 +309,6 @@ left: 20px;
 3-absolute: The element is positioned relative to its nearest positioned ancestor (an ancestor with position set to relative, absolute, fixed, or sticky). If there is no such ancestor, it uses the initial containing block (typically the viewport).
 
 Example:
-css
-Copy code
-
 .absolute-element {
 position: absolute;
 top: 50px;
@@ -320,9 +317,6 @@ right: 100px;
 fixed: The element is positioned relative to the viewport, which means it stays in the same place even when the page is scrolled.
 
 Example:
-css
-Copy code
-
 .fixed-element {
 position: fixed;
 bottom: 0;
@@ -331,9 +325,6 @@ right: 0;
 sticky: The element is positioned based on the user's scroll position. It toggles between relative and fixed depending on the scroll position.
 
 Example:
-css
-Copy code
-
 .sticky-element {
 position: sticky;
 top: 0; /_ will stick to the top when you reach its scroll position _/
@@ -518,7 +509,7 @@ Mrs Ashitha shetty ma'am(CPO)
 
 
 <===========Why should be hire you=========>
-You should hire me because 
+You should hire me because
 
 Technical Proficiency: I have a strong foundation in frontend development, proficient in HTML, CSS, and JavaScript, along with expertise in modern frameworks like React.
 
@@ -558,3 +549,13 @@ Balance: Emphasize that you understand the importance of both approaches and can
 
 
 
+
+My name is Suhail Khan from District Hardoi, Uttar Pradesh, India. I completed my graduation in 2020 from Dr. APJ Abdul Kalam Technical University, Lucknow, Uttar Pradesh.
+
+If I talk about my professional experience, I recently worked as a full-stack developer with the Rajasthan Police Headquarters in Jaipur. Before that, I worked as a React.js developer with Vastu Housing Finance Corporation Pvt. Ltd. in Nashik, Maharashtra.
+
+Apart from work, I enjoy traveling and exploring new places. I also like watching cricket.
+
+Regarding my family, we are seven members including me. My father is a farmer, and my mother is a housewife.
+
+That's all about me. Thank you, sir.

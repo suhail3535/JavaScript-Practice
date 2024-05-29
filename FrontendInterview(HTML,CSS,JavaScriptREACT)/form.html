@@ -59,7 +59,7 @@
 
     });
     //////element create and display data
-    function displayData (data) {
+    function displayData (data, index) {
         cont.innerHTML = ""
         data.forEach((ele) => {
             // console.log(ele,"ele");
@@ -68,12 +68,19 @@
             h1.innerText = ele.name
             let h4 = document.createElement("h4")
             h4.innerText = ele.mobile
-            let btn=document.createElement("button")
-            btn.innerText="Add"
-            btn.addEventListener("click", ()=>{
-                addToCart("favdata",ele)
+            let btn = document.createElement("button")
+            btn.innerText = "Add"
+            btn.addEventListener("click", () => {
+                addToCart("favdata", ele)
             })
-            div.append(h1, h4,btn)
+            let btn1 = document.createElement("button")
+            btn1.innerText = "delete"
+            btn1.addEventListener("click", () => {
+                delData(arr, index);
+                alert("deleted");
+                displayData(arr)
+            });
+            div.append(h1, h4, btn, btn1)
             cont.append(div)
         })
 
@@ -82,14 +89,18 @@
     displayData(arr)
 
     // <--------------add to cart------------->
-        function addToCart(key,value){
-            let  cart=JSON.parse(localStorage.getItem("favdata"))||[]
-            cart.push(value)
-            localStorage.setItem(key,JSON.stringify(cart))
-            alert("added to cart")
+    function addToCart (key, value) {
+        let cart = JSON.parse(localStorage.getItem("favdata")) || []
+        cart.push(value)
+        localStorage.setItem(key, JSON.stringify(cart))
+        alert("added to cart")
 
-        }
-
+    }
+    // ------Delete function------
+    function delData (data, value) {
+        data.splice(value, 1);
+        localStorage.setItem("userdata", JSON.stringify(data));
+    }
 
 </script>
 
