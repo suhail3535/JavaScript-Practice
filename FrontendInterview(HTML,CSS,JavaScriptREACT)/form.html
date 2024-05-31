@@ -24,81 +24,77 @@
 <body>
     <form id="form">
         Name:-<input id="name" type="text" placeholder="Enter Name"><br><br>
-        Mobile:-<input id="mobile" type="text" placeholder="Enter Name"><br><br>
-
+        Mobile:-<input id="mobile" type="text" placeholder="Enter Mobile"><br><br>
         <button id="btn">Submit</button>
     </form>
     <div id="cont"></div>
 </body>
 <script>
     let arr = JSON.parse(localStorage.getItem("userdata")) || [];
-    // console.log(arr,"30");
     let form = document.getElementById("form");
     let btn = document.getElementById("btn");
+    let cont = document.getElementById("cont");
 
-
-    let cont = document.getElementById("cont")
     btn.addEventListener("click", (e) => {
         e.preventDefault();
-
         let obj = {
             name: document.getElementById("name").value,
             mobile: document.getElementById("mobile").value,
         };
-        if (obj.name == "" || obj.mobile == "") {
-            alert("please fill the value")
-            return
+        if (obj.name === "" || obj.mobile === "") {
+            alert("please fill in the value");
+            return;
         } else {
-            arr.push(obj);///
-            localStorage.setItem("userdata", JSON.stringify(arr))
-
+            arr.push(obj);
+            localStorage.setItem("userdata", JSON.stringify(arr));
             form.reset();
-            displayData(arr)
+            displayData(arr);
         }
-
-
     });
-    //////element create and display data
-    function displayData (data, index) {
-        cont.innerHTML = ""
-        data.forEach((ele) => {
-            // console.log(ele,"ele");
-            let div = document.createElement("div")
-            let h1 = document.createElement("h1")
-            h1.innerText = ele.name
-            let h4 = document.createElement("h4")
-            h4.innerText = ele.mobile
-            let btn = document.createElement("button")
-            btn.innerText = "Add"
+
+
+    function displayData (data) {
+        let newindex = 0
+        cont.innerHTML = "";
+        data.forEach((ele, index) => {
+            newindex++
+
+
+            let div = document.createElement("div");
+            let h1 = document.createElement("h1");
+            let span = document.createElement("span")
+            span.innerText = newindex
+            h1.innerText = ele.name;
+            let h4 = document.createElement("h4");
+            h4.innerText = ele.mobile;
+            let btn = document.createElement("button");
+            btn.innerText = "Add";
             btn.addEventListener("click", () => {
-                addToCart("favdata", ele)
-            })
-            let btn1 = document.createElement("button")
-            btn1.innerText = "delete"
+                addToCart("favdata", ele);
+            });
+            let btn1 = document.createElement("button");
+            btn1.innerText = "delete";
             btn1.addEventListener("click", () => {
                 delData(arr, index);
                 alert("deleted");
-                displayData(arr)
+                displayData(arr);
             });
-            div.append(h1, h4, btn, btn1)
-            cont.append(div)
-        })
-
+            div.append(span, h1, h4, btn, btn1);
+            cont.append(div);
+        });
     }
 
-    displayData(arr)
+    displayData(arr);
 
-    // <--------------add to cart------------->
     function addToCart (key, value) {
-        let cart = JSON.parse(localStorage.getItem("favdata")) || []
-        cart.push(value)
-        localStorage.setItem(key, JSON.stringify(cart))
-        alert("added to cart")
-
+        let cart = JSON.parse(localStorage.getItem("favdata")) || [];
+        cart.push(value);
+        localStorage.setItem(key, JSON.stringify(cart));
+        alert("added to cart");
     }
-    // ------Delete function------
-    function delData (data, value) {
-        data.splice(value, 1);
+
+    function delData (data, index) {
+        data.splice(index, 1);
         localStorage.setItem("userdata", JSON.stringify(data));
     }
 
